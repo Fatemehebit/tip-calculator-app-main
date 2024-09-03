@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip-calculator-app-main</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body class="bg-LightGrayishCyan">
+    <header class="display-f justify-center mb-3 mt-3">
+        <img src="./assets/img/logo.svg" alt="">
+    </header>
+    
+    <main class="col-10-xl col-12-sm container bg-White p-1 mb-3">
+        <div class="row p-1">
+            <div class="col-6-xl col-12-md">
+                <h4 class="mb-1 text-DarkgrayishCyan">Bill</h4>
+                <input type="number" id="bill" placeholder="0" class="col-10-xl col-9-lg col-12-md input-dollar text-DarkCyan bg-VeryLightGrayishCyan mb-2">
+                <img src="./assets/img/icon-dollar.svg" alt="dollar" class="img-dollar">
+
+                <h4 class="mb-1 text-DarkgrayishCyan">Select Tips %</h4>
+
+                <div class="col-12-xl select-btn gapR-1 gapC-1 mb-1">
+                    <div id="fivePer" class="btn bg-DarkCyan bg-light-hover-StrongCyan text-hover-DarkCyan text-White col-3-xl col-3-lg col-3-md col-5-sm">5%</div>
+                    <div id="tenPer" class="btn bg-DarkCyan text-White bg-light-hover-StrongCyan text-hover-DarkCyan col-3-xl col-3-lg col-3-md col-5-sm">10%</div>
+                    <div id="fifteenPer" class="btn bg-DarkCyan text-White bg-light-hover-StrongCyan text-hover-DarkCyan col-3-xl col-3-lg col-3-md col-5-sm">15%</div>
+                    <div id="twentyFivePer" class="btn bg-DarkCyan text-White bg-light-hover-StrongCyan text-hover-DarkCyan col-3-xl col-3-lg col-3-md col-5-sm">25%</div>
+                    <div id="fiftyPer" class="btn bg-DarkCyan text-White bg-light-hover-StrongCyan text-hover-DarkCyan col-3-xl col-3-lg col-3-md col-5-sm">50%</div>
+                    <input type="number" placeholder="Custom" id="customPer" ontoggle="btnSelected()" class="custom bg-VeryLightGrayishCyan text-DarkCyan border-DarkCyan col-3-xl col-3-lg col-3-md col-5-sm"> 
+                </div>
+                <div class="person col-10-xl col-9-lg display-f justify-space-between align-baseline">
+                    <h4 class="mb-1 mt-2 text-DarkgrayishCyan">Number of People</h4>
+                    <p id="person-message"></p>
+                </div>
+                <input type="number" id="person" placeholder="0" class="col-10-xl col-9-lg col-12-md input-person text-DarkCyan bg-VeryLightGrayishCyan mb-2">
+                <img src="./assets/img/icon-person.svg" alt="person" class="img-person">
+                
+            </div>
+
+            <div class="col-6-xl col-6-lg col-12-md bg-DarkCyan tip-total p-3 br">
+                
+                <div class="display-f justify-space-between align-center">
+                    <div class="tip-amount mr-1">
+                        <h4 class="text-White">Tip Amount</h4>
+                        <span class="text-GrayishCyan">/ person</span>
+                    </div>
+
+                    <div id="tip">$0.00</div>
+                </div>
+
+                <div class="display-f justify-space-between align-center mb-3">
+                    <div class="total-per mr-1">
+                        <h4 class="text-White">Total</h4>
+                        <span class="text-GrayishCyan">/ person</span>
+                    </div>
+
+                    <div id="total">$0.00</div>
+                </div>
+
+                <div class="mt-5">
+                        <a href="#" id="reset" class="reset-btn display-f justify-center">RESET</a>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/JS/app.js"></script>
+</body>
+</html>

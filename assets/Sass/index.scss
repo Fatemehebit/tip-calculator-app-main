@@ -1,0 +1,76 @@
+@import "variables";
+
+@import "font";
+
+@import "breakpoints";
+
+@import "grid";
+
+@import "colors";
+
+@import "btn";
+
+@import "utilities";
+
+*{
+    font-family: $fontFamily;
+    font-weight: $base-font-weight;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    h2{
+        text-align: center;
+    }
+}
+
+input{
+    font-size: $input-font-size;
+    border-radius: $base-border-radius * 0.3;
+    direction: rtl;
+    border: 1px solid $VeryLightGrayishCyan;
+
+    input::placeholder{
+        color: lighten($GrayishCyan, 15%);
+    }
+
+    &:focus {
+        border: 3px solid hsl(172, 67%, 45%) !important;
+    }
+}
+
+.input-dollar{
+    position: relative;
+    z-index: 0;
+}
+
+.img-dollar{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    transform: translate(1344%, 53%);
+}
+
+.input-person{
+    position: relative;
+    z-index: 2;
+}
+
+.img-person{
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    transform: translate(1135%, 60%);
+}
+
+#tip{
+    color: $StrongCyan;
+    font-size: $font-size-xxl;
+}
+
+#total{
+    color: $StrongCyan;
+    font-size: $font-size-xxl;
+}
